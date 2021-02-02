@@ -25,29 +25,36 @@ nav#gnb {
 
 #gnb ul#mainMenu {
     width: 562px;
-    border: 1px solid #f00;
-/*    border: 1px solid #d9d9d9;*/
+    border: 1px solid #d9d9d9;
     margin: auto;
+}
+#gnb ul#mainMenu>li {
+    float: left;
 }
 #gnb ul#mainMenu::after {
     content: "";
-    height: 40px;
+    height: 220px;
 /*    border: 1px solid #000;*/
     display: inline-block;
 }
 
-#gnb ul#mainMenu>li {
-    float: left;
-}
 
 #gnb ul#mainMenu>li>a {    /* >(직하위)를 사용하여 서브메뉴가 아닌 메인메뉴만 선택하겠다 지정 */
-    width: 140px;
-    font-size: 18px;
     font-weight: bold;
+    background-color: #87cefa;
+}
+#gnb ul li a {
+     width: 140px;
+    font-size: 18px;
     text-align: center;
     padding: 10px;
 
-    background-color: #87cefa;
     display: inline-block;
 }
+
+/*
+#gnb ul.subMenu {
+    display: none;
+}
+*/
 /*nav#gnb 끝*/
