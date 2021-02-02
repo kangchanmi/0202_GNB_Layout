@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+/*Reset 시작*/
+* {
+    color: #000;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+/*Reset 끝*/
+
+
+/*nav#gnb 시작*/
+nav#gnb {
+    width: 566px;        /* float를 지정한 상위요소에 폭이 지정되어 있지 않으면 창을 줄였을 때 내용이 내려감 */
+/*    border: 1px solid #000;*/
+    margin: 50px auto;        /* 위에서도 좀 떨어지도록, m50-a */
+}
+
+#gnb ul#mainMenu {
+    width: 562px;
+    border: 1px solid #f00;
+/*    border: 1px solid #d9d9d9;*/
+    margin: auto;
+}
+#gnb ul#mainMenu::after {
+    content: "";
+    height: 40px;
+/*    border: 1px solid #000;*/
+    display: inline-block;
+}
+
+#gnb ul#mainMenu>li {
+    float: left;
+}
+
+#gnb ul#mainMenu>li>a {    /* >(직하위)를 사용하여 서브메뉴가 아닌 메인메뉴만 선택하겠다 지정 */
+    width: 140px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+
+    background-color: #87cefa;
+    display: inline-block;
+}
+/*nav#gnb 끝*/
