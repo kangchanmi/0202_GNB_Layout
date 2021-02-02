@@ -26,7 +26,7 @@ nav#gnb {
 #gnb ul#mainMenu {
     width: 562px;
     border: 1px solid #d9d9d9;
-    margin: auto;
+    margin: 0 auto;
 }
 #gnb ul#mainMenu>li {
     float: left;
